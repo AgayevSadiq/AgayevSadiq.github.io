@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ramo{
+            width: 250px;
+            line-height: 40px;
+            background-color: lime;
+            padding: 5px;
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>DOM PROJECT</h1>
+     <button onclick="yandir()">Class elave et</button>
+     <button onclick="sondur()">Class legv ele</button>
+     <button onclick="toggle()">Yandir - Sondur</button>
+
+     <div id="aspa">
+   <p>ASPA GROUP education center</p>
+     </div>
+     
+     <script>
+     const list = document.getElementById('aspa');
+
+      function yandir() {
+         list.classList.add('ramo');
+      }
+
+      function sondur() {
+        list.classList.remove("ramo");
+      }
+
+
+      function toggle() {
+        list.classList.toggle('ramo');
+      }
+
+     </script>
+
+
+</body>
+</html>

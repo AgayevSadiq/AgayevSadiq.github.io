@@ -58,10 +58,15 @@ const personalMovieDB = {
             let genre = prompt(`Xosunuza gelen ${i} nomreli janr`);
             personalMovieDB.genres[i - 1] = genre;
         }
+        personalMovieDB.genres.forEach ((item, i) => {
+            console.log(`Xosunuza gelen janr ${i + 1}: ${item}`);
+        })
     },
     toggleVisibleMyDB: function () {
-        if (personalMovieDB) {
-          console.log(!personalMovieDB.privat);  
-        } 
+        if (personalMovieDB.privat) {
+          personalMovieDB.privat = false;
+        } else {
+            personalMovieDB.privat = true;
+        }
     }
 }
